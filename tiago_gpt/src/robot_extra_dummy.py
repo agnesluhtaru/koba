@@ -15,8 +15,6 @@ import tiktoken
 import rospy
 from std_msgs.msg import Int16
 import rospkg
-import os
-import regex as re
 import rospy
 import actionlib
 from pal_interaction_msgs.msg import TtsAction, TtsGoal
@@ -116,7 +114,7 @@ def generate_chat_response_streaming():
             text += item
             if len(item.strip()) > 0:
                 item_start = item.strip()[0]
-                if item_start in ".:;?!|":
+                if item_start in ".:;?!": # sending to speech synth when part of the sentence is finished
                     speech_synth(text)
                     entire_response += text
                     text = ''
@@ -161,7 +159,7 @@ def Azure_speech_recognizing_handler(e : speechsdk.SpeechRecognitionEventArgs) :
         print(col_text)
         print("\n")
         transcribed_text += " " + e.result.text
-        text = e.result.text.lower().replace("robert", "robot")
+        text = e.result.text.lower().replace("robert", "robot") # just a hack to make it work better
         if TRIGGERWORD in text:
             talking = True
 
