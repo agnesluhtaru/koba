@@ -2,6 +2,8 @@
 
 Tiago GPT-4 project for HRI course
 
+[DEMO VIDEO](https://www.youtube.com/watch?v=W3SLLaTTGQ0)
+
 ## ASR and GPT-4 (not complete yet :)
 
 Speech recognition is based on [Microsoft Azure Speech-to-text](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/how-to-recognize-speech?pivots=programming-language-python).
