@@ -1,4 +1,4 @@
-# koba
+# KOBA (Keyboardless Object Bringing Assistant)
 
 Tiago GPT-4 project for HRI course
 
