@@ -1,0 +1,4 @@
+You see the following items on the table ([id] [colours]), these are five two coloured sponges on the table, they are placed in a row from right to left:
+99 yellow and purple,
+5 pink and purple,
+26 pink and green
